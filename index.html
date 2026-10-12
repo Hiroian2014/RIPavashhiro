@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIPavashhiro</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background: #0b1020;
+      color: white;
+    }
+
+    header {
+      background: #111b35;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      color: #a3e635;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 55px 20px;
+      background: linear-gradient(135deg, #172554, #0b1020);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #a3e635;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      line-height: 2;
+    }
+
+    button {
+      background: #a3e635;
+      color: #142000;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 25px 8%;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .game {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .game:hover {
+      transform: translateY(-6px);
+    }
+
+    .game img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .game-content {
+      padding: 18px;
+    }
+
+    .game p {
+      color: #cbd5e1;
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>🎮 RIPavashhiro</h2>
+
+    <nav>
+      <a href="#home">home</a>
+      <a href="#games">games<a><a></a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>به دنیای بازی‌ها خوش آمدید!</h1>
+    <p></p>
+    <button onclick="document.getElementById('games').scrollIntoView({behavior:'smooth'})">
+      دیدن بازی‌ها
+    </button>
+  </section>
+
+  <main class="section" id="games">
+    <h2>games</h2>
+
+    <div class="games">
+      <article class="game">
+        <img
+          src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F1f995948-02d6-4a2f-a2b7-68a77361b1e3-images__1_.jpg"
+          alt="تصویر Minecraft"
+        >
+        <div class="game-content">
+          <h3>Minecraft</h3>
+          <p>بساز، کشف کن و ماجراجویی کن!</p>
+          <button onclick="alert('Minecraft انتخاب شد!')">
+            انتخاب بازی
+          </button>
+        </div>
+      </article>
+
+      <article class="game">
+        <img
+          src="https://pictureurl.com/api/storage/file?key=u%2Fanon%2F9038b05b-ee83-47c9-a80e-49cbe6528bf6-images.jpg"
+          alt="تصویر Rocket League"
+        >
+        <div class="game-content">
+          <h3>Rocket League</h3>
+          <p>فوتبال با ماشین‌های مسابقه‌ای!</p>
+          <button onclick="alert('Rocket League انتخاب شد!')">
+            انتخاب بازی
+          </button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
